@@ -7,12 +7,12 @@
   
   <title>CSAPP-Bomb-Lab | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="CSAPP Bomb Lab [TOC] 实验简介在书籍官网上就可以找到相应的实验题目. 下载 Self-Study Handout,  解压缩之后, 可以看到 bomb、bomb.c这两个文件, 我们将利用这两个文件来逆向得到6条字符串, 拆解炸弹. 开始之前需要先安装好64位Linux系统, 简单学习下gdb的使用, Beej’s Quick Guide to GDB , Summary of">
+  <meta name="description" content="CSAPP Bomb Lab @[TOC] 实验简介在书籍官网上就可以找到相应的实验题目. 下载 Self-Study Handout,  解压缩之后, 可以看到 bomb、bomb.c这两个文件, 我们将利用这两个文件来逆向得到6条字符串, 拆解炸弹. 开始之前需要先安装好64位Linux系统, 简单学习下gdb的使用, Beej’s Quick Guide to GDB , Summary o">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSAPP-Bomb-Lab">
 <meta property="og:url" content="http://yoursite.com/2020/03/17/CSAPP-Bomb-Lab/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="CSAPP Bomb Lab [TOC] 实验简介在书籍官网上就可以找到相应的实验题目. 下载 Self-Study Handout,  解压缩之后, 可以看到 bomb、bomb.c这两个文件, 我们将利用这两个文件来逆向得到6条字符串, 拆解炸弹. 开始之前需要先安装好64位Linux系统, 简单学习下gdb的使用, Beej’s Quick Guide to GDB , Summary of">
+<meta property="og:description" content="CSAPP Bomb Lab @[TOC] 实验简介在书籍官网上就可以找到相应的实验题目. 下载 Self-Study Handout,  解压缩之后, 可以看到 bomb、bomb.c这两个文件, 我们将利用这两个文件来逆向得到6条字符串, 拆解炸弹. 开始之前需要先安装好64位Linux系统, 简单学习下gdb的使用, Beej’s Quick Guide to GDB , Summary o">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://q79gkgkkn.bkt.clouddn.com/1583670276525.png">
 <meta property="og:image" content="http://q79gkgkkn.bkt.clouddn.com/1583668424947.png">
@@ -20,7 +20,7 @@
 <meta property="og:image" content="http://q79gkgkkn.bkt.clouddn.com/1583669840958.png">
 <meta property="og:image" content="http://q79gkgkkn.bkt.clouddn.com/1583668958475.png">
 <meta property="article:published_time" content="2020-03-17T12:55:32.000Z">
-<meta property="article:modified_time" content="2020-03-17T13:11:14.326Z">
+<meta property="article:modified_time" content="2020-03-17T13:16:34.222Z">
 <meta property="article:author" content="zwh">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://q79gkgkkn.bkt.clouddn.com/1583670276525.png">
@@ -95,7 +95,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="CSAPP-Bomb-Lab"><a href="#CSAPP-Bomb-Lab" class="headerlink" title="CSAPP Bomb Lab"></a>CSAPP Bomb Lab</h1><p><img src="http://q79gkgkkn.bkt.clouddn.com/1583670276525.png" alt=""></p>
-<p>[TOC]</p>
+<p>@[TOC]</p>
 <h2 id="实验简介"><a href="#实验简介" class="headerlink" title="实验简介"></a>实验简介</h2><p>在<a href="http://csapp.cs.cmu.edu/3e/labs.html" target="_blank" rel="noopener">书籍官网</a>上就可以找到相应的实验题目. 下载 Self-Study Handout,  解压缩之后, 可以看到 <code>bomb</code>、<code>bomb.c</code>这两个文件, 我们将利用这两个文件来逆向得到6条字符串, 拆解炸弹.</p>
 <p>开始之前需要先安装好64位Linux系统, 简单学习下gdb的使用, <a href="http://beej.us/guide/bggdb/" target="_blank" rel="noopener">Beej’s Quick Guide to GDB
 </a>, <a href="http://csapp.cs.cmu.edu/3e/docs/gdbnotes-x86-64.pdf" target="_blank" rel="noopener">Summary of GDB commands for x86-64 Systems</a>. </p>
